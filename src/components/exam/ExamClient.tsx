@@ -163,9 +163,8 @@ export default function ExamClient() {
             return;
         }
 
-        // Shuffle the loaded questions before setting state
         if (loadedQuestions.length > 0) {
-            setQuestions(shuffleArray(loadedQuestions));
+            setQuestions(loadedQuestions);
         }
     }
 
@@ -415,3 +414,5 @@ export default function ExamClient() {
     </div>
   );
 }
+
+    
